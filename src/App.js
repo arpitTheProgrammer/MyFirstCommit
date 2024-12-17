@@ -3,14 +3,14 @@ import './App.css';
 import {useState} from 'react'
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [counter, setCounter] = useState(0);
   const HandleIncrease = () =>{
-    setCount(count+1);
+    setCounter(counter+1);
   }
   return (
     <div className="App">
        <h1>
-        {count}
+        {counter}
        </h1>
        <button onClick={HandleIncrease}>Increase Count</button>
     </div>
